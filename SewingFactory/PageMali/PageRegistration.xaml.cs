@@ -12,21 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SewingFactory.PageMali;
 
-namespace SewingFactory
+namespace SewingFactory.PageMali
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageRegistration.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageRegistration : Page
     {
-        public MainWindow()
+        public PageRegistration()
         {
             InitializeComponent();
-            FrameApp.frmObj = FrmMail;
-            FrmMail.Navigate(new PageLogin());
-            
         }
     }
 }

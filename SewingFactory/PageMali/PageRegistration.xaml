@@ -1,0 +1,95 @@
+﻿<Page x:Class="SewingFactory.PageMali.PageRegistration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SewingFactory.PageMali"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageRegistration">
+
+
+    <Grid>
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" >
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="5,5,5,0"
+                HorizontalAlignment="Center">
+                <TextBlock
+                 Text="Введите ваше имя:"
+                 Width="150" />
+                <TextBox Name="NameYours" />
+            </StackPanel>
+            <StackPanel
+        Orientation="Horizontal"
+                Margin="5,5,5,0"
+                HorizontalAlignment="Center">
+                <TextBlock
+                 Text="Выберите ваше катигорию:"
+                 Width="150" 
+/>
+                <ComboBox Name="Сhoice" Width="150">
+                    <ComboBoxItem IsSelected="True">Менеджер</ComboBoxItem>
+                    <ComboBoxItem>Кладовщик</ComboBoxItem>
+                    <ComboBoxItem >Агент</ComboBoxItem>
+                    <ComboBoxItem>Отдел кадров</ComboBoxItem>
+                    <ComboBoxItem>Оператор</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel
+                 Orientation="Horizontal"
+                 HorizontalAlignment="Center">
+                <TextBlock
+                Text="Введите логин:"
+                Width="150" />
+                <TextBox Name="TxbLogin" />
+            </StackPanel>
+
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="5,0,5,0"
+                HorizontalAlignment="Center">
+                <TextBlock
+                    Text="Введите пароль:"
+                    Width="150" />
+                <TextBox Name="TxbPassword" />
+            </StackPanel>
+
+            <StackPanel
+        Orientation="Horizontal"
+                Margin="5,5,5,0"
+                HorizontalAlignment="Center">
+                <TextBlock
+                 Text="Потвердите пароль:"
+                 Width="150" />
+                <PasswordBox Name="PsbPassword"  />
+            </StackPanel>
+
+
+
+            <StackPanel
+                Margin="0,5,5,0"
+                Orientation="Horizontal">
+                <Button                 
+                    Name="BtnCreate"
+                    Click="BtnCreate_Click"
+                    Margin="5,0,5,5"
+                    Content="Создать" />
+
+                <Button 
+                Width="50"
+                    Height="25"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Name="BtnBack"
+                Click="BtnBack_Click"ROSN
+                Content="Назад"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right" />
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
