@@ -34,5 +34,10 @@ namespace SewingFactory.PageMali
         {
 
         }
+
+        private void BtnReg_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
