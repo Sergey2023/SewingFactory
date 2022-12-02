@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ab1d0cdeeeb447059290b1c77dab670d" Name="Diagram1">
+        <EntityTypeShape EntityType="FactoryModel.Accessories" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.AccessoriesProduct" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.Cloth" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.Order" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.OrderProducts" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.StorageAccessories" Width="1.5" PointX="5.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.StorageCloth" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FactoryModel.User" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <AssociationConnector Association="FactoryModel.FK_AccessoriesProduct_Accessories1" ManuallyRouted="false" />
+        <AssociationConnector Association="FactoryModel.FK_StorageAccessories_Accessories1" ManuallyRouted="false" />
+        <AssociationConnector Association="FactoryModel.FK_AccessoriesProduct_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="FactoryModel.FK_StorageCloth_Cloth1" ManuallyRouted="false" />
+        <AssociationConnector Association="FactoryModel.FK_Order_User2" ManuallyRouted="false" />
+        <AssociationConnector Association="FactoryModel.FK_Order_User3" ManuallyRouted="false" />
+        <AssociationConnector Association="FactoryModel.FK_OrderProducts_Order1" ManuallyRouted="false" />
+        <AssociationConnector Association="FactoryModel.FK_OrderProducts_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="FactoryModel.ProductCloth" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

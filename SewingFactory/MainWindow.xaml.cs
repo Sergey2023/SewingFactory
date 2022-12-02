@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SewingFactory.PageMali;
+using SewingFactory.BD;
+
 
 namespace SewingFactory
 {
@@ -24,9 +26,11 @@ namespace SewingFactory
         public MainWindow()
         {
             InitializeComponent();
-            FrameApp.frmObj = FrmMail;
-            FrmMail.Navigate(new PageLogin());
             
+            FrameApp.frmObj = FRM;
+            FrameApp.frmObj.Navigate(new PageLogin());
+            DB.eQpBD = new FactoryEntities2();
+
         }
     }
 }

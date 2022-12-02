@@ -8,40 +8,137 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageLogin">
 
-    <Grid>
-        <StackPanel
+    <Grid Background="White" RenderTransformOrigin="0.295,0.506">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="353*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="119*" />
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/imadg/1631656963_46-phonoteka-org-p-foni-dlya-shveinikh-masterskikh-krasivo-50.jpg"                           
+         Stretch="Fill"                 
+         Grid.Column="0" Grid.RowSpan="2"/>
+
+        <StackPanel 
             HorizontalAlignment="Center"
-            VerticalAlignment="Center">
-            <StackPanel
-                Orientation="Horizontal"
-                HorizontalAlignment="Center">
-                <TextBlock
-                    Text="Введите логин:"
-                    Width="150"/>
-                <TextBox Name="TxbLogin"/>
-            </StackPanel>
+            Grid.Column="1"  
+            Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="86,0"
+            >
+            <Label FontSize=" 46"
+                   FontFamily="Mistral"
+                   FontStretch="Medium">
+                Швейная фабрика</Label>
 
-            <StackPanel 
-                Orientation="Horizontal"
-                Margin="5,0,5,0"
-                HorizontalAlignment="Center">
-                <TextBlock
-                    Text="Введите пароль:"
-                    Width="150"/>
-                <PasswordBox Name = "PsbPassword" />
-            </StackPanel>
+        </StackPanel>
 
-            <StackPanel Margin="0,5,5,0"
-                        Orientation="Horizontal">
-                <Button Name="BtnLogin"
-                        Click="BtnLogin_Click"
-                        Margin="0,0,5,5"
-                        Content="Bойти"/>
-                <Button Name="BtnReg"
-                        Click="BtnReg_Click_1"
-                        Margin="0,0,5,5"
-                        Content="Регистрация"/>
-            </StackPanel>
+        <StackPanel                    
+            Grid.Column="1"  
+            Grid.Row="1"
+            Margin="20,20,20,20"            
+            Grid.ColumnSpan="2">
+            <Label
+                HorizontalAlignment="Center"
+                FontSize="32"
+                FontFamily="Mistral"
+                FontWeight="Bold">Вход</Label>
+            <Label
+                 HorizontalAlignment="Center"
+                FontSize="16"
+                FontFamily="Monotype Corsiva"
+                FontWeight="Bold"
+                Opacity="0.8">Введите свои данные для входа</Label>
+
+
+
+            <!-- Вывод  надписи логин-->
+            <Label
+                 HorizontalAlignment="Left"
+                FontSize="14"
+                FontFamily="Monotype Corsiva"              
+                >Логин</Label>
+
+            <TextBox
+                
+                Name="TxbLogin"
+                Margin="10,0,150,0"
+                Height="30"
+                FontSize="16"
+                FontFamily="Monotype Corsiva">
+                <TextBox.ToolTip>
+                    <ToolTip
+                       FontFamily="Monotype Corsiva" >
+                        Введите  свой логин
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <!--Логин-->
+
+            <!-- Вывод  надписи пароль-->
+            <Label
+                 HorizontalAlignment="Left"
+                FontSize="14"
+                FontFamily="Monotype Corsiva"              
+                >Пароль</Label>
+
+            <PasswordBox
+                Name="PsbPassword"
+                Margin="10,0,150,0"
+                Height="30"
+                FontSize="16"
+                />
+            <!--Пароль-->
+
+            <StackPanel.Effect>
+                <DropShadowEffect Color="black" Direction="320" ShadowDepth="10" Opacity="0.3"/>
+
+            </StackPanel.Effect>
+
+        </StackPanel>
+
+        <StackPanel        
+             Grid.Row="1"
+             Grid.Column="1"
+            VerticalAlignment="Bottom" Grid.ColumnSpan="2">
+
+            <WrapPanel
+                Margin="50,5,60,50">
+
+                <!--Кнопка регистрации-->
+                <Button x:Name="Register"
+                   Content="Регистрация" 
+                    FontSize="24"
+                    Width="165" 
+                   FontWeight="Bold"
+                    FontFamily="Monotype Corsiva"
+                    Click="Register_Click_1"
+                    Height="40"                     
+                    Background="#fdf6e4"
+                    Foreground="Black" 
+                        Margin="0,0,10,0"
+                    Opacity="0.9"/>
+                <!--Кнопка регистрации-->
+               
+                <!--Кнопка Входа-->
+                <Button x:Name="Enter"
+                   Content="Вход" 
+                    FontSize="24"
+                    Width="165" 
+                   FontWeight="Bold"
+                    FontFamily="Monotype Corsiva" 
+                    Height="40"                     
+                    Background="#fdf6e4"
+                    Foreground="Black" 
+                        Margin="0,0,0,0"
+                    Opacity="0.9" Click="Enter_Click"/>
+                <!--Кнопка Входа-->
+            </WrapPanel>
+            <StackPanel.Effect>
+                <DropShadowEffect Color="black" Direction="320" ShadowDepth="7" Opacity="0.3"/>
+
+            </StackPanel.Effect>
 
         </StackPanel>
 

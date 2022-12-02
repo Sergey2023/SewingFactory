@@ -5,37 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SewingFactory"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="48*"/>
-            <RowDefinition Height="169*"/>
-        </Grid.RowDefinitions>
-        <StackPanel Background="			
-#e0a9af"
-                    Orientation="Horizontal"
-                    >
+         Width="900"
+        Height="480"
+        
+        MinHeight="450"
+        MaxHeight="480"
+        
+        
+        MinWidth="900"     
+        MaxWidth="900"
+        Title="Швейная фабрика" 
+        >
 
-
-        </StackPanel>
-
-
-
-        <StackPanel Orientation="Horizontal"
-                    HorizontalAlignment="Center">
-            <Image Source="/Imadg/logo-01.jpg"
-                   Height="70"
-                   Width="70"
-                       />
-            <TextBlock Text="Швейная фабрика"
-                       FontSize="37"
-                       Margin="15,0,0,0"/>
-
-        </StackPanel>
-        <Frame
-           NavigationUIVisibility="Hidden"
-           Name="FrmMail"
-          Grid.Row="1"
-            />
+    <Grid Background="White">
+        <Frame Name="FRM"
+               NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

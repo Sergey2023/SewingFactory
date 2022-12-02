@@ -9,87 +9,193 @@
       Title="PageRegistration">
 
 
-    <Grid>
-        <StackPanel
+    <Grid Background="White" RenderTransformOrigin="0.295,0.506">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="353*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Source="/imadg/1631656963_46-phonoteka-org-p-foni-dlya-shveinikh-masterskikh-krasivo-50.jpg"                           
+         Stretch="Fill"                 
+         Grid.Column="0" Grid.RowSpan="2"/>
+
+        <StackPanel 
+            
+            Margin="0,-10,0,50"
             HorizontalAlignment="Center"
-            VerticalAlignment="Center" >
-            <StackPanel
-                Orientation="Horizontal"
-                Margin="5,5,5,0"
-                HorizontalAlignment="Center">
-                <TextBlock
-                 Text="Введите ваше имя:"
-                 Width="150" />
-                <TextBox Name="NameYours" />
-            </StackPanel>
-            <StackPanel
-        Orientation="Horizontal"
-                Margin="5,5,5,0"
-                HorizontalAlignment="Center">
-                <TextBlock
-                 Text="Выберите ваше катигорию:"
-                 Width="150" 
-/>
-                <ComboBox Name="Сhoice" Width="150">
-                    <ComboBoxItem IsSelected="True">Менеджер</ComboBoxItem>
-                    <ComboBoxItem>Кладовщик</ComboBoxItem>
-                    <ComboBoxItem >Агент</ComboBoxItem>
-                    <ComboBoxItem>Отдел кадров</ComboBoxItem>
-                    <ComboBoxItem>Оператор</ComboBoxItem>
-                </ComboBox>
-            </StackPanel>
-            <StackPanel
-                 Orientation="Horizontal"
-                 HorizontalAlignment="Center">
-                <TextBlock
-                Text="Введите логин:"
-                Width="150" />
-                <TextBox Name="TxbLogin" />
-            </StackPanel>
+            Grid.Column="2"  
+            Grid.RowSpan="1"
+            >
+            <Label FontSize=" 46"
+                   FontFamily="Mistral"
+                   FontStretch="Medium">
+                Швейная фабрика</Label>
 
-            <StackPanel
-                Orientation="Horizontal"
-                Margin="5,0,5,0"
-                HorizontalAlignment="Center">
-                <TextBlock
-                    Text="Введите пароль:"
-                    Width="150" />
-                <TextBox Name="TxbPassword" />
-            </StackPanel>
-
-            <StackPanel
-        Orientation="Horizontal"
-                Margin="5,5,5,0"
-                HorizontalAlignment="Center">
-                <TextBlock
-                 Text="Потвердите пароль:"
-                 Width="150" />
-                <PasswordBox Name="PsbPassword"  />
-            </StackPanel>
-
-
-
-            <StackPanel
-                Margin="0,5,5,0"
-                Orientation="Horizontal">
-                <Button                 
-                    Name="BtnCreate"
-                    Click="BtnCreate_Click"
-                    Margin="5,0,5,5"
-                    Content="Создать" />
-
-                <Button 
-                Width="50"
-                    Height="25"
-                Background="Transparent"
-                BorderBrush="Transparent"
-                Name="BtnBack"
-                Click="BtnBack_Click"ROSN
-                Content="Назад"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Right" />
-
-            </StackPanel>
         </StackPanel>
+
+        <StackPanel                    
+            Grid.Column="1"
+            Margin="10,30,50,35" 
+            
+            Grid.RowSpan="2"
+            >
+
+            <StackPanel.Effect>
+                <DropShadowEffect Color="black" Direction="320" ShadowDepth="10" Opacity="0.3"/>
+
+            </StackPanel.Effect>
+
+
+
+            <Label
+                HorizontalAlignment="Center"
+                FontSize="32"
+                FontFamily="Mistral"                
+                FontWeight="Bold">Регистрация</Label>
+            <Label
+                 HorizontalAlignment="Center"
+                FontSize="16"
+                FontFamily="Monotype Corsiva"
+                FontWeight="Bold"
+                Opacity="0.8">Введите свои данные для регистрации</Label>
+
+            <!--ФиО-->
+            <Label
+                 HorizontalAlignment="Left"
+                FontSize="14"
+                FontFamily="Monotype Corsiva"              
+                Opacity="0.8">ФИО</Label>
+
+            <TextBox
+                Name="NameYours"
+                Margin="10,0,150,0"
+                Height="25"
+                FontSize="16"
+                FontFamily="Monotype Corsiva"
+                >
+                <TextBox.ToolTip>
+                    <ToolTip
+                       FontFamily="Monotype Corsiva" >
+                        Введите  свою Фамилию Имя и Отчество.
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <!--ФиО-->
+
+            <!--Логин-->
+            <Label
+                 HorizontalAlignment="Left"
+                FontSize="14"
+                FontFamily="Monotype Corsiva"              
+                Opacity="0.8">Логин</Label>
+
+            <TextBox
+                Name="TxbLogin"
+                Margin="10,0,150,0"
+                Height="25"
+                FontSize="16"
+                FontFamily="Monotype Corsiva"
+                >
+                <TextBox.ToolTip>
+                    <ToolTip
+                       FontFamily="Monotype Corsiva" >
+                        Введите  свой логин, который будете использовать для входа.
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+            <!--<ComboBox x:Name="Сhoice" 
+                      
+                      Text="Должность"
+                      IsEditable="True"
+                      Margin="10,10,150,0"
+                      >
+                <ComboBoxItem Content="Админ" />
+                <ComboBoxItem Content="Кладовщик"/>
+                <ComboBoxItem Content="Менеджер"/>
+                <ComboBoxItem Content="Директора"/>
+               
+            </ComboBox>-->
+            <!--Логин-->
+
+            <!--Пароль-->
+            <Label
+                 HorizontalAlignment="Left"
+                FontSize="14"
+                FontFamily="Monotype Corsiva"              
+                Opacity="0.8">Пароль</Label>
+
+            <TextBox Name="TxbPassword"
+                Margin="10,0,150,0"
+                Height="25"
+                FontSize="16"
+                FontFamily="Monotype Corsiva">
+                <TextBox.ToolTip>
+                    <ToolTip
+                       FontFamily="Monotype Corsiva" >
+                        Введите  свой 
+                        Введите  свой пароль, вы будете использовать его при входе.
+                    </ToolTip>
+                </TextBox.ToolTip>
+            </TextBox>
+
+            <!--Пароль-->
+
+
+            <!--Повтор Пароль-->
+            <Label
+                 HorizontalAlignment="Left"
+                FontSize="14"
+                FontFamily="Monotype Corsiva"              
+                Opacity="0.8">Повторите пароль</Label>
+
+            <PasswordBox
+                Name="PsbPassword"
+                Margin="10,0,150,10"
+                Height="25"
+                FontSize="16"
+                FontFamily="Monotype Corsiva"></PasswordBox>
+            <!--Повтор Пароль-->
+
+            <WrapPanel
+                Margin="10,5,10,50">
+
+                <!--Кнопка регистрации-->
+                <Button x:Name="Backspace"
+                   Content="Вернуться" 
+                    FontSize="24"
+                    Width="165" 
+                   FontWeight="Bold"
+                    FontFamily="Monotype Corsiva"
+                    Click="Backspace_Click"
+                    Height="40"                     
+                    Background="#fdf6e4"
+                    Foreground="Black" 
+                        Margin="0,0,10,0"
+                    Opacity="0.9"/>
+                <!--Кнопка регистрации-->
+
+                <!--Кнопка Входа-->
+                <Button x:Name="EnterTwo"
+                   Content="Зарегистрироваться" 
+                   Click="EnterTwo_Click"
+                    FontSize="20"
+                    Width="180" 
+                   FontWeight="Bold"
+                    FontFamily="Monotype Corsiva" 
+                    Height="40"                     
+                    Background="#fdf6e4"
+                    Foreground="Black" 
+                        Margin="15,0,0,0"
+                    Opacity="0.9"/>
+                <!--Кнопка Входа-->
+            </WrapPanel>
+
+
+
+        </StackPanel>
+
     </Grid>
 </Page>
