@@ -38,24 +38,10 @@
 
 
         <!--РСтэк панель на комбобоксы-->
-        <StackPanel Grid.Row="0"
-                    HorizontalAlignment="Left"
-                    Orientation="Horizontal" Grid.Column="1" Margin="65,5,0,5">
-            <TextBlock
-                Margin="0,0,15,0"
-                Text="50/270"
-                FontSize="16"
-                FontFamily="Monotype Corsiva"
-                FontWeight="Bold"
-                />
-            <Label Name="test2"
-                Background="Red" Width="51"></Label>
 
-            <TextBox Name="TextName1" />
-
-            <!--<ComboBox Width="150" Name="ComboType" SelectionChanged="ComboType_SelectionChanged" DisplayMemberPath="Role"/>
+        <!--<ComboBox Width="150" Name="ComboType" SelectionChanged="ComboType_SelectionChanged" DisplayMemberPath="Role"/>
             <CheckBox Name="CheckActual" Checked="CheckActual_Checked" Unchecked="CheckActual_Unchecked" Content="Показать тольуко админов"></CheckBox>-->
-        </StackPanel>
+
         <!--РСтэк панель на комбобоксы-->
 
         <!--Кнопка Выйти-->
@@ -69,14 +55,14 @@
                     Height="30"                     
                     Background="#fdf6e4"
                     Foreground="Black" 
-                    Margin="0,0,10,30"
-                HorizontalAlignment="Right"
+                    Margin="534,20,0,19"
+                HorizontalAlignment="Left"
                     Grid.Row="0"
-                    Grid.Column="2"
+                    Grid.Column="1"
                     Opacity="0.9"/>
         <!--Кнопка Выйти-->
         <Button 
-                   Content="Добавить и сохранить " 
+                   Content="Добавить" 
                     FontSize="16"
                     Width="165" 
                    FontWeight="Bold"
@@ -85,7 +71,7 @@
                     Height="30"                     
                     Background="#fdf6e4"
                     Foreground="Black" 
-                    Margin="0,1,175,38"
+                    Margin="0,16,544,23"
                 HorizontalAlignment="Right"
                     Grid.Row="0"
                     Grid.Column="1"
@@ -101,7 +87,7 @@
                     Height="30"                     
                     Background="#fdf6e4"
                     Foreground="Black" 
-                    Margin="0,5,359,34"
+                    Margin="0,16,260,23"
                 HorizontalAlignment="Right"
                     Grid.Row="0"
                     Grid.Column="1"

@@ -35,12 +35,17 @@ namespace SewingFactory.PageMali
 
         private void Backspace_Click(object sender, RoutedEventArgs e)
         {
-            FrameApp.frmObj.Navigate(new PageLogin());
+
         }
 
         private void Сhoice_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
             /*Materiallist.ItemsSource = DB.eQpBD.User.Where(x => x.Role == Сhoice).ToList();*/
+        }
+
+        private void Backspace_Click_1(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.Navigate(new PageLogin());
         }
     }
 }

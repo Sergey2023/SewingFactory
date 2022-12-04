@@ -61,6 +61,11 @@ namespace SewingFactory.PageMali
 
         private void Backspace_Click(object sender, RoutedEventArgs e)
         {
+
+
+            
+
+
             Notkol();
         }
 

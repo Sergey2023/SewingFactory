@@ -74,15 +74,14 @@
                     Width="165" 
                    FontWeight="Bold"
                     FontFamily="Monotype Corsiva"
-                    Click="Backspace_Click"
-                    Height="30"                     
+                   Click="Backspace_Click_1"                    
                     Background="#fdf6e4"
                     Foreground="Black" 
-                    Margin="0,0,10,30"
+                    Margin="0,0,10,34"
                 HorizontalAlignment="Right"
                     Grid.Row="0"
-                    Grid.Column="2"
-                    Opacity="0.9"/>
+                    Grid.Column="1"
+                    Opacity="0.9" Height="30" VerticalAlignment="Bottom"/>
         <!--Кнопка Выйти-->
 
         <!--Лист ву-->

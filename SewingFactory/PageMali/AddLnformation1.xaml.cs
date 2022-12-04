@@ -33,14 +33,17 @@ namespace SewingFactory.PageMali
                 Name = tbName.Text,
                 Login = tbLogin.Text,
                 Password = tbPassword.Text,
-                RoleName = tbRole.Text
+                RoleName = tdRole.Text,
 
             };
             DB.eQpBD.User.Add(userObj);
             DB.eQpBD.SaveChanges();
-            AddLnformation1 addLnformation1 = new AddLnformation1();
-            addLnformation1.Activate();
-           
+            MessageBox.Show("Пользователь успешно  добавен!",
+                         "Уведомление",
+                         MessageBoxButton.OK,
+                         MessageBoxImage.Information);
+            
+
         }
     }
 }

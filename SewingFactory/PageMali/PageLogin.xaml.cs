@@ -72,8 +72,8 @@ namespace SewingFactory.PageMali
                             MessageBoxImage.Information);
                             FrameApp.frmObj.Navigate(new PageAdmin());
                             break;
-                       /* case "Директор  ":
-                            MessageBox.Show("Здравствуйте, Директор " + userObj.Login + "  !",
+                       case "storekeeper":
+                            MessageBox.Show("Здравствуйте, Кладавщик " + userObj.Login + "  !",
                             "Уведомление",
                             MessageBoxButton.OK,
                             MessageBoxImage.Information);
@@ -85,7 +85,7 @@ namespace SewingFactory.PageMali
                             MessageBoxButton.OK,
                             MessageBoxImage.Information);
                             FrameApp.frmObj.Navigate(new AccountingMaterials());
-                            break;*/
+                            break;
 
 
                     }
