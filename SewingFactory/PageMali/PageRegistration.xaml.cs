@@ -43,7 +43,7 @@ namespace SewingFactory.PageMali
                             Name = NameYours.Text,
                             Login = TxbLogin.Text,
                             Password = PsbPassword.Password,
-                            Role = idrole.ToString(),
+                            RoleName = idrole.ToString()
 
                         };
                         DB.eQpBD.User.Add(userObj);

@@ -29,7 +29,7 @@ namespace SewingFactory
             
             FrameApp.frmObj = FRM;
             FrameApp.frmObj.Navigate(new PageLogin());
-            DB.eQpBD = new FactoryEntities2();
+            DB.eQpBD = new FactoryEntities3();
 
         }
     }

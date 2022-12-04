@@ -9,6 +9,6 @@ namespace SewingFactory.BD
 {
     internal class DB
     {
-        public static FactoryEntities2 eQpBD;
+        public static FactoryEntities3 eQpBD;
     }
 }

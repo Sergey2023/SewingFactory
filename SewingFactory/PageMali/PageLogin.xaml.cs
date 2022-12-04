@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,18 +61,18 @@ namespace SewingFactory.PageMali
                 else
                 {
 
-                    switch (userObj.Role)
+                    switch (userObj.RoleName)
                     {
 
 
-                        case "Админ     ":
+                        case "admin":
                             MessageBox.Show("Здравствуйте, Админ " + userObj.Login + "  !",
                             "Уведомление",
                             MessageBoxButton.OK,
                             MessageBoxImage.Information);
-                            
+                            FrameApp.frmObj.Navigate(new PageAdmin());
                             break;
-                        case "Директор  ":
+                       /* case "Директор  ":
                             MessageBox.Show("Здравствуйте, Директор " + userObj.Login + "  !",
                             "Уведомление",
                             MessageBoxButton.OK,
@@ -84,7 +85,7 @@ namespace SewingFactory.PageMali
                             MessageBoxButton.OK,
                             MessageBoxImage.Information);
                             FrameApp.frmObj.Navigate(new AccountingMaterials());
-                            break;
+                            break;*/
 
 
                     }

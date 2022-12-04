@@ -25,6 +25,7 @@ namespace SewingFactory.PageMali
         {
             InitializeComponent();
             Materiallist.ItemsSource = DB.eQpBD.Cloth.ToList();
+            
         }
 
         private void Сhoice_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -39,7 +40,7 @@ namespace SewingFactory.PageMali
 
         private void Сhoice_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-            Materiallist.ItemsSource = DB.eQpBD.User.Where(x => x.Role == Сhoice.Text).ToList();
+            /*Materiallist.ItemsSource = DB.eQpBD.User.Where(x => x.Role == Сhoice).ToList();*/
         }
     }
 }
